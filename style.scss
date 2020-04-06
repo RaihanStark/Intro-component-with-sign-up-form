@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: $Red;
+  font-family: "Poppins";
+}
+
+h1 {
+  margin: 0;
+}
+
+.bg {
+  position: absolute;
+  background: url(../../images/bg-intro-desktop.png);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.title-section {
+  align-self: center;
+  color: white;
+  padding: 4em;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.form-section {
+  align-self: center;
+  padding: 4em;
+
+  .messsage-top {
+    background-color: $Blue;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    margin-bottom: 1.5em;
+  }
+
+  .form-group {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1.5em;
+
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.185);
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        border-radius: 0.5em;
+        margin: 0.5em 0;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        padding: 1em 2em;
+
+        &::placeholder {
+          font-weight: 700;
+        }
+
+        &[type="submit"] {
+          background-color: $Green;
+          border: 0;
+
+          box-shadow: 0px 3px 0px 0px hsl(154, 51%, 46%);
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+
+    span {
+      font-size: 0.6em;
+      text-align: center;
+      color: $Grayish-Blue;
+
+      a {
+        text-decoration: none;
+        color: $Red;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
