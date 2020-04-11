@@ -112,6 +112,13 @@ h1 {
   font-weight: 600;
 }
 
+#error-msg {
+  padding-bottom: 0.5em;
+  color: $Red;
+}
+.invalid {
+  border: 2px solid $Red !important;
+}
 @media (max-width: 844.98px) {
   .container {
     grid-template-columns: 1fr;
